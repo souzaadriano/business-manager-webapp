@@ -1,89 +1,106 @@
-import './login.css'
+import "./login.css";
+
+const style = {
+  backgroundImage:
+    "url(https://images.unsplash.com/photo-1616763355603-9755a640a287?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+};
 
 const Login = () => {
-    return (
-        <>
-          {/*
-            This example requires updating your template:
-    
-            ```
-            <html class="h-full bg-white">
-            <body class="h-full">
-            ```
-          */}
-          <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-            <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-              <img
-                className="mx-auto h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt="Your Company"
-              />
-              <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                Sign in to your account
-              </h2>
+  return (
+    <div className="bg-white dark:bg-gray-900">
+      <div className="flex justify-center h-screen">
+        <div className="hidden bg-cover lg:block lg:w-2/3" style={style}>
+          <div className="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
+            <div>
+              <h2 className="text-4xl font-bold text-white">Brand</h2>
+
+              <p className="max-w-xl mt-3 text-gray-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                autem ipsa, nulla laboriosam dolores, repellendus perferendis
+                libero suscipit nam temporibus molestiae
+              </p>
             </div>
-    
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form className="space-y-6" action="#" method="POST">
+          </div>
+        </div>
+
+        <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+          <div className="flex-1">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold text-center text-gray-700 dark:text-white">
+                Brand
+              </h2>
+
+              <p className="mt-3 text-gray-500 dark:text-gray-300">
+                Sign in to access your account
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <form>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                    Email address
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+                  >
+                    Email Address
                   </label>
-                  <div className="mt-2">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@example.com"
+                    className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  />
                 </div>
-    
-                <div>
-                  <div className="flex items-center justify-between">
-                    <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+
+                <div className="mt-6">
+                  <div className="flex justify-between mb-2">
+                    <label
+                      htmlFor="password"
+                      className="text-sm text-gray-600 dark:text-gray-200"
+                    >
                       Password
                     </label>
-                    <div className="text-sm">
-                      <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                        Forgot password?
-                      </a>
-                    </div>
+                    <a
+                      href="#"
+                      className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+                    >
+                      Forgot password?
+                    </a>
                   </div>
-                  <div className="mt-2">
-                    <input
-                      id="password"
-                      name="password"
-                      type="password"
-                      autoComplete="current-password"
-                      required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
+
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Your Password"
+                    className="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  />
                 </div>
-    
-                <div>
-                  <button
-                    type="submit"
-                    className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
+
+                <div className="mt-6">
+                  <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                     Sign in
                   </button>
                 </div>
               </form>
-    
-              <p className="mt-10 text-center text-sm text-gray-500">
-                Not a member?{' '}
-                <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                  Start a 14 day free trial
+
+              <p className="mt-6 text-sm text-center text-gray-400">
+                Don&#x27;t have an account yet?{" "}
+                <a
+                  href="#"
+                  className="text-blue-500 focus:outline-none focus:underline hover:underline"
+                >
+                  Sign up
                 </a>
+                .
               </p>
             </div>
           </div>
-        </>
-      )
-}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Login
+export default Login;
