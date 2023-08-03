@@ -4,6 +4,7 @@ import Home from "./pages/home/home.tsx";
 import About from "./pages/home/about.tsx";
 import Login from "./pages/login/login.page.tsx";
 import { SandBoxPage } from "./pages/sandbox/sandbox.page.tsx";
+import Dashboard from "./pages/admin/dashboard.page.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/sandbox" element={<SandBoxPage />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
