@@ -1,10 +1,10 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/home.tsx";
-import About from "./pages/home/about.tsx";
-import Login from "./pages/login/login.page.tsx";
-import { SandBoxPage } from "./pages/sandbox/sandbox.page.tsx";
-import Dashboard from "./pages/admin/dashboard.page.tsx";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Dashboard from './pages/admin/dashboard.page.tsx';
+import About from './pages/home/about.tsx';
+import Home from './pages/home/home.tsx';
+import Login from './pages/login/login.page.tsx';
+import { SandBoxPage } from './pages/sandbox/sandbox.page.tsx';
 
 function App() {
   return (
