@@ -1,12 +1,13 @@
 import { ChangeEvent, useState } from 'react';
-import { useNavigate, useResolvedPath } from 'react-router-dom';
-import { useUserContext } from '../../../../context';
+import { useNavigate } from 'react-router-dom';
+import { useLayoutContext } from '../../../../context/layout/layout-context.hook';
 
 export const LoginForm = () => {
-  const userContext = useUserContext();
+  //const userContext = useUserContext();
   const navegation = useNavigate();
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const layoutContext = useLayoutContext();
   const handleEmail = (event: ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
     console.log({ email });
@@ -15,9 +16,10 @@ export const LoginForm = () => {
     setPassword(event.target.value);
     console.log({ password });
   };
-  useResolvedPath('/');
+
   const handleSignin = async () => {
-    await userContext.signin({ email, password });
+    // await userContext.signin({ email, password });
+    layoutContext.showLayout();
     navegation('/');
   };
 
