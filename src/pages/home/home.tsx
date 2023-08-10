@@ -1,5 +1,4 @@
 import { useUserContext } from '../../context';
-import { Header } from '../login/components/login-box/header.componenet';
 
 const Home = () => {
   const userContext = useUserContext();
@@ -10,7 +9,6 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
       <h1>Home</h1>
       <br />
       <p>email: {userContext.email}</p>
