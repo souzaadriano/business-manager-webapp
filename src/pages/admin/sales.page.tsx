@@ -1,7 +1,7 @@
 import React from 'react';
 import DateTimeDisplay from './components/date-time-display.component';
 
-function dashboard() {
+function SalesPage() {
 
     return (
         
@@ -162,4 +162,4 @@ function dashboard() {
     );
 }
 
-export default dashboard
+export default SalesPage
