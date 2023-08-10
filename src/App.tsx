@@ -3,6 +3,7 @@ import './App.css';
 import { Layout } from './components/layout.tsx';
 import { useLayoutContext } from './context/layout/layout-context.hook.ts';
 import Dashboard from './pages/admin/dashboard.page.tsx';
+import Sales from './pages/admin/sales.page.tsx';
 import About from './pages/home/about.tsx';
 import Home from './pages/home/home.tsx';
 import Login from './pages/login/login.page.tsx';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/sandbox" element={<SandBoxPage />}></Route>
           <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/sales" element={<Sales />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
