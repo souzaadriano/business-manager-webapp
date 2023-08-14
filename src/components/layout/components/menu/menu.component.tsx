@@ -11,7 +11,7 @@ export const Menu: TComponent = ({ children }) => {
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <Header />
-        <div className={layout.menu ? 'm-4 overflow-auto' : 'm-2 overflow-auto'}>{children}</div>
+        <div className={layout.menu ? 'm-4' : 'm-2'}>{children}</div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
@@ -23,6 +23,9 @@ export const Menu: TComponent = ({ children }) => {
             <HomeIcon />
           </MenuLink>
           <MenuLink label="Products" path="/products">
+            <HomeIcon />
+          </MenuLink>
+          <MenuLink label="Sales" path="/sales">
             <HomeIcon />
           </MenuLink>
         </ul>

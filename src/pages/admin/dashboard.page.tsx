@@ -5,8 +5,8 @@ function dashboard() {
 
     return (
         
-        <div className="flex h-screen w-full">            
-            <div className="flex flex-col flex-1 w-full overflow-y-auto">                
+        <div className="flex h-screen w-full">
+            <div className="flex flex-col flex-1 w-full">
                 <main className="relative z-0 flex-1 pb-8 px-6 bg-white">
                     <div className="grid pb-10 mt-4">
                         {/* Start Content */}
