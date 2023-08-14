@@ -1,0 +1,4 @@
+export enum DISCOUNT_STRATEGY {
+  PERCENTAGE = 'PERCENTAGE',
+  VALUE = 'VALUE',
+}

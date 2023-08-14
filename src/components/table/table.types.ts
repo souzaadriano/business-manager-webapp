@@ -1,6 +1,6 @@
-export type TTableProps = TTableHeaderProps & {
-  data: TRowDataProps[][];
-};
+import { TPaginationProps } from '../pagination/pagination.types';
+
+export type TTableProps = TTableHeaderProps & TPaginationProps;
 
 export type TTableHeaderProps = {
   selectable?: boolean;
@@ -12,7 +12,7 @@ export type TTableRowProps = {
 };
 
 export type TRowDataProps = {
-  value: string | number | boolean;
+  value?: string | number | boolean;
   bagde?: string | number | boolean;
 };
 

@@ -1,0 +1,8 @@
+export enum URL_CONTENT_TYPE {
+  IMAGE = 'IMAGE',
+  ENDPOINT = 'ENDPOINT',
+  SHEET = 'SHEET',
+  DOCUMENT = 'DOCUMENT',
+  DATA = 'DATA',
+  UNKNOWN = 'UNKNOWN',
+}
