@@ -10,6 +10,7 @@ export default {
   plugins: [
     require('@tailwindcss/forms'),
     require("daisyui"),
+    require('@tailwindcss/line-clamp'),
   ],
   daisyui: {
     themes: ["light", "dark", "cupcake"],
