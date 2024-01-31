@@ -42,5 +42,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:souzaadriano/business-manager-webapp.git",
+  "author": "NFDeap <juniorapf@outlook.com>",
+  "license": "MIT"
 }

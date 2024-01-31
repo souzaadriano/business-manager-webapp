@@ -5,7 +5,8 @@ import { PageContextProvider } from './context/page-context.provider';
 export const Layout: TComponent = ({ children }) => {
   return (
     <PageContextProvider>
-      <Menu>{children}</Menu>;
+      <Menu></Menu>
+      {children}
     </PageContextProvider>
   );
 };

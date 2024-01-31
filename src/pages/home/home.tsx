@@ -1,11 +1,13 @@
 import { useUserContext } from '../../context';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const Home = () => {
   const userContext = useUserContext();
-  //const navigate = useNavigate();
-  //useEffect(() => {
-  //  if (userContext.logged !== true) navigate('/login');
-  //});
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (userContext.logged !== true) navigate('/login');
+  });
 
   return (
     <div>
